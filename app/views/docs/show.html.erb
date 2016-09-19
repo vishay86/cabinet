@@ -1,6 +1,6 @@
 <h1><%= @doc.title %></h1>
 
-<strong><%= @doc.content %></strong>
+<strong><%=simple_format(@doc.content) %></strong>
 
 <%= link_to 'All Docs', docs_path %> |
 <%= link_to 'Edit', edit_doc_path(@doc)%> |
